@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School site</title>
+    <link rel="shortcut icon" href="icons/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+</head>
+
+<body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <nav class="nav">
+        <img class="nav__logo" src="icons/logo.svg" alt="">
+        <div class="nav__hamb" onclick="menuHamb()">
+            <span id="span1" class="open"></span>
+            <span id="span2" class="open"></span>
+            <span id="span3" class="open"></span>
+        </div>
+        <div class="nav__hamb-menu">
+            <ul>
+                <li class="nav__hamb-item"><a>Функции</a></li>
+                <li class="nav__hamb-item"><a>Цены</a></li>
+                <li class="nav__hamb-item"><a>Обзор</a></li>
+                <li class="nav__hamb-item"><a>О нас</a></li>
+                <li class="nav__hamb-item">
+                    <button class="nav__signUp nav__hamb-signUp">Войти</button>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__navigation">
+            <a class="features" href="#">Функция</a>
+            <a class="pricing" href="#">Цены</a>
+            <a class="overview" href="#">Обзор</a>
+            <a class="about" href="#">О нас</a>
+        </div>
+
+        <button class="nav__signUp">Войти</button>
+    </nav>
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__main wow slideInLeft" data-wow-duration="1s" data-wow-offset='100'>
+                <h1>Развивайте своё мастерство без усердия</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sequi.</p>
+                <div class="buttons">
+                    <button class="getStarted">Начать</button>
+                    <button class="Diskount">Скидка</button>
+                </div>
+            </div>
+            <div class="header__blocks wow slideInRight" data-wow-duration="1s" data-wow-offset='100'>
+                <div class="header__block header__block-1"><img src="img/block1.png" alt=""></div>
+                <div class="header__block header__block-2"><img src="img/block2.png" alt=""></div>
+                <div class="header__block header__block-3"><img src="img/block3.png" alt=""></div>
+                <div class="header__block header__block-4"><img src="img/block4.png" alt=""></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="features__container container">
+            <div class="features__text wow fadeIn" data-wow-duration="1s" data-wow-offset='100'>
+                <h2>Почему мы лучше остальных</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium, sequi.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium, sequi.
+                </p>
+            </div>
+            <div class="features__facts wow slideInRight" data-wow-offset='100' data-wow-duration="1s">
+                <div class="features__fact features__fact-1">
+                    <h3>Удобный график</h3><img src="img/chedule.png" alt="">
+                </div>
+                <div class="features__fact features__fact-2">
+                    <h3>Проверка домашних заданий</h3><img src="img/homework.png" alt="">
+                </div>
+                <div class="features__fact features__fact-3">
+                    <h3>Современная интернет-платформа</h3><img src="img/platform.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefit">
+        <div class="benefit__opacity-bgc"></div>
+        <div class="benefit__container container ">
+            <div class="benefit__main">
+                <div class="benefit__args">
+                    <div class="benefit__arg-1 benefit__arg wow slideInLeft" data-wow-duration="1s" data-wow-offset='100'>
+                        <div class="benefit__num">
+                            <div class="opacity"></div>
+                            <p>1</p>
+                        </div>
+                        <div class="benefit__text-1 benefit__text">
+                            <h2>Мы улучшаем наш продукт на протяжении многих лет</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, exercitationem!</p>
+                        </div>
+                    </div>
+                    <div class="benefit__arg-2 benefit__arg wow slideInRight" data-wow-duration="1s" data-wow-offset='100'>
+                        <div class="benefit__num">
+                            <div class="opacity"></div>
+                            <p>2</p>
+                        </div>
+                        <div class="benefit__text-2 benefit__text">
+                            <h2>Мы улучшаем наш продукт на протяжении многих лет</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, exercitationem!</p>
+                        </div>
+                    </div>
+                    <button class="getStarted wow slideInLeft" data-wow-duration="1s" data-wow-offset='100'>Начать</button>
+                </div>
+            </div>
+            <div class="benefit__pict wow slideInRight" data-wow-offset='100' data-wow-duration="1s"><img src="img/womenTree.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="pricing__container">
+            <div class="pricing__main wow fadeIn" data-wow-duration="1s" data-wow-offset='100'>
+                <div class="pricing__text">
+                    <h2>Вот все наши пакеты</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum pariatur cum rem molestiae
+                        recusandae totam provident illo sint. Pariatur, magnam.</p>
+                </div>
+                <div class="pricing__tarif">
+                    <p>Месячный</p>
+                    <div class="pricing__checkbox-group">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label"></label>
+                    </div>
+                    <p>Годовой</p>
+                </div>
+
+            </div>
+            <div class="pricing__packets slider wow slideInRight"  data-wow-duration="1s" data-wow-offset='100'>
+                <div class="pricing__packet-1 pricing__packet slider__item">
+                    <h3 class="pricing__name">Начальный</h3>
+                    <p class="pricing__subtext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                        voluptatum, quidem ducimus vero nulla totam.
+                    </p>
+                    <div class="price">
+                        <h4 class="price-total1">50$</h4>
+                        <p class="price-tarif1">/месяц</p>
+                    </div>
+                    <div class="pricing__included">
+                        <ul class="pricing__included-list">
+                            <li class="picing__included-1"><span class="Yes"><img src="icons/Yes.svg"
+                                        alt=""></span>Видео-лекции</li>
+                            <li class="picing__included-2"><span class="Yes"><img src="icons/Yes.svg"
+                                        alt=""></span>Проверка домашки</li>
+                            <li class="picing__included-3"><span class="No"><img src="icons/No.svg"
+                                        alt=""></span>Дополнительные задания</li>
+                            <li class="picing__included-4"><span class="No"><img src="icons/No.svg"
+                                        alt=""></span>Ежемесячные конференции</li>
+                            <li class="picing__included-5"><span class="No"><img src="icons/No.svg" alt=""></span>Личные
+                                советы от учителей</li>
+                        </ul>
+                    </div>
+                    <button class="Diskount">Начать</button>
+                </div>
+                <div class="pricing__packet-2 pricing__packet slider__item">
+                    <h3 class="pricing__name">Продвинутый</h3>
+                    <p class="pricing__subtext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                        voluptatum, quidem ducimus vero nulla totam.
+                    </p>
+                    <div class="price">
+                        <h4 class="price-total2">75$</h4>
+                        <p class="price-tarif2">/месяц</p>
+                    </div>
+                    <div class="pricing__included">
+                        <ul class="pricing__included-list">
+                            <li class="picing__included-1"><span class="Yes"><img src="icons/Yes.svg"
+                                        alt=""></span>Видео-лекции</li>
+                            <li class="picing__included-2"><span class="Yes"><img src="icons/Yes.svg"
+                                        alt=""></span>Проверка домашки</li>
+                            <li class="picing__included-3"><span class="Yes"><img src="icons/No.svg"
+                                        alt=""></span>Дополнительные задания</li>
+                            <li class="picing__included-4"><span class="Yes"><img src="icons/No.svg"
+                                        alt=""></span>Ежемесячные конференции</li>
+                            <li class="picing__included-5"><span class="No"><img src="icons/No.svg" alt=""></span>Личные
+                                советы от учителей</li>
+                        </ul>
+                    </div>
+                    <button class="Diskount">Начать</button>
+                </div>
+                <div class="pricing__packet-3 pricing__packet slider__item">
+                    <h3 class="pricing__name">Премиум</h3>
+                    <p class="pricing__subtext"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                        voluptatum, quidem ducimus vero nulla totam.
+                    </p>
+                    <div class="price">
+                        <h4 class="price-total3">100$</h4>
+                        <p class="price-tarif3">/месяц</p>
+                    </div>
+                    <div class="pricing__included">
+                        <ul class="pricing__included-list">
+                            <li class="picing__included-1"><span class="Yes"><img src="icons/Yes.svg"
+                                        alt=""></span>Видео-лекции</li>
+                            <li class="picing__included-2"><span class="Yes"><img src="icons/Yes.svg"
+                                        alt=""></span>Проверка домашки</li>
+                            <li class="picing__included-3"><span class="Yes"><img src="icons/No.svg"
+                                        alt=""></span>Дополнительные задания</li>
+                            <li class="picing__included-4"><span class="Yes"><img src="icons/No.svg"
+                                        alt=""></span>Ежемесячные конференции</li>
+                            <li class="picing__included-5"><span class="Yes"><img src="icons/No.svg"
+                                        alt=""></span>Личные советы от учителей</li>
+                        </ul>
+                    </div>
+                    <button class="Diskount">Начать</button>
+                </div>
+            </div>
+            <div class="content"></div>
+        </div>
+    </section>
+
+    <section class="discount">
+        <div class="discount__container container">
+            <div class="discount__img wow slideInLeft" data-wow-duration="1s" data-wow-offset='100'><img src="img/diskount.png" alt=""></div>
+            <div class="discount__main wow slideInRight" data-wow-duration="1s" data-wow-offset='100'>
+                <h2>Каждый ученик должен поделиться своим кодом скидки для друзей</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ullam sapiente error nisi doloremque
+                    adipisci?</p>
+                <button class="getStarted">У меня есть код</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__main">
+                <img src="icons/logo.svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni quas eum. Totam, accusantium
+                    officia.</p>
+                <form action="Post" class="footer__form">
+                    <input type="text" placeholder="Введите e-mail">
+                    <button type="submit" class="getStarted">Подпишись</button>
+                </form>
+            </div>
+            <div class="footer__other">
+                <ul class="footer__other-ul">
+                    <li class="footer__other-li"> <h3>Платформа</h3>
+                        <ul class="footer__ul">
+                            <li class="footer__li"><a href="#">Обзор</a></li>
+                            <li class="footer__li"><a href="#">Функции</a></li>
+                            <li class="footer__li"><a href="#">О нас</a></li>
+                            <li class="footer__li"><a href="#">Цены</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__other-li"> <h3>Помощь</h3>
+                        <ul class="footer__ul">
+                            <li class="footer__li"><a href="#">Как это работает?</a></li>
+                            <li class="footer__li"><a href="#">Куда задавать вопросы?</a></li>
+                            <li class="footer__li"><a href="#">Как платить?</a></li>
+                            <li class="footer__li"><a href="#">Что для этого нужно?</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__other-li"> <h3>Контакты</h3>
+                        <ul class="footer__ul">
+                            <li class="footer__li"><a href="#">(000) 000-0000</a></li>
+                            <li class="footer__li"><a href="#">115 Авеню д.Незнаево, Москва(МСК)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
