@@ -209,6 +209,11 @@ a:active {
           transform: scale(0.9);
 }
 
+.overflowHidden {
+  z-index: 5;
+  overflow: hidden;
+}
+
 .nav {
   height: 150px;
   display: -webkit-box;
@@ -725,7 +730,7 @@ a:active {
   background-color: #001049;
 }
 
-.pricing .pricing__container .pricing__packets {
+.pricing .pricing__container .pricing__packets, .pricing .pricing__container .overflowHiddenSlider {
   width: 100%;
   max-width: 1440px;
   height: 800px;
@@ -740,7 +745,7 @@ a:active {
   z-index: 3;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet {
+.pricing .pricing__container .pricing__packets .pricing__packet, .pricing .pricing__container .overflowHiddenSlider .pricing__packet {
   width: 340px;
   height: 720px;
   position: relative;
@@ -750,17 +755,17 @@ a:active {
   transition: all 0.5s;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet .pricing__name {
+.pricing .pricing__container .pricing__packets .pricing__packet .pricing__name, .pricing .pricing__container .overflowHiddenSlider .pricing__packet .pricing__name {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet .pricing__subtext {
+.pricing .pricing__container .pricing__packets .pricing__packet .pricing__subtext, .pricing .pricing__container .overflowHiddenSlider .pricing__packet .pricing__subtext {
   max-width: 270px;
   margin: auto;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet .price {
+.pricing .pricing__container .pricing__packets .pricing__packet .price, .pricing .pricing__container .overflowHiddenSlider .pricing__packet .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,19 +779,19 @@ a:active {
   margin: 30px;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet .price h4 {
+.pricing .pricing__container .pricing__packets .pricing__packet .price h4, .pricing .pricing__container .overflowHiddenSlider .pricing__packet .price h4 {
   font-size: 80px;
   margin: 0;
   color: #5685FF;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet .pricing__included {
+.pricing .pricing__container .pricing__packets .pricing__packet .pricing__included, .pricing .pricing__container .overflowHiddenSlider .pricing__packet .pricing__included {
   position: relative;
   left: 20px;
   margin-bottom: 50px;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet .pricing__included li {
+.pricing .pricing__container .pricing__packets .pricing__packet .pricing__included li, .pricing .pricing__container .overflowHiddenSlider .pricing__packet .pricing__included li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,20 +806,20 @@ a:active {
   margin: 20px 0 0 0;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet:hover {
+.pricing .pricing__container .pricing__packets .pricing__packet:hover, .pricing .pricing__container .overflowHiddenSlider .pricing__packet:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet:hover .Diskount {
+.pricing .pricing__container .pricing__packets .pricing__packet:hover .Diskount, .pricing .pricing__container .overflowHiddenSlider .pricing__packet:hover .Diskount {
   border: 2px solid #001049;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet:hover .Diskount:hover {
+.pricing .pricing__container .pricing__packets .pricing__packet:hover .Diskount:hover, .pricing .pricing__container .overflowHiddenSlider .pricing__packet:hover .Diskount:hover {
   background-color: #001049;
 }
 
-.pricing .pricing__container .pricing__packets .pricing__packet:hover .price h4 {
+.pricing .pricing__container .pricing__packets .pricing__packet:hover .price h4, .pricing .pricing__container .overflowHiddenSlider .pricing__packet:hover .price h4 {
   color: #001049;
 }
 

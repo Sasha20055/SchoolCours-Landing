@@ -131,6 +131,10 @@ a
     &:active
         transform: scale(0.90)
 
+.overflowHidden
+    z-index: 5
+    overflow: hidden
+
 .nav
     height: 150px
     display: flex
@@ -402,7 +406,7 @@ a
                         left: 22px
                         background-color: #001049
 
-        .pricing__packets
+        .pricing__packets, .overflowHiddenSlider
             width: 100%
             max-width: 1440px
             height: 800px
