@@ -22,31 +22,33 @@
 
 
     <nav class="nav">
-        <img class="nav__logo" src="icons/logo.svg" alt="">
-        <div class="nav__hamb" onclick="menuHamb()">
-            <span id="span1" class="open"></span>
-            <span id="span2" class="open"></span>
-            <span id="span3" class="open"></span>
-        </div>
-        <div class="nav__hamb-menu">
-            <ul>
-                <li class="nav__hamb-item"><a>Функции</a></li>
-                <li class="nav__hamb-item"><a>Цены</a></li>
-                <li class="nav__hamb-item"><a>Обзор</a></li>
-                <li class="nav__hamb-item"><a>О нас</a></li>
-                <li class="nav__hamb-item">
-                    <button class="nav__signUp nav__hamb-signUp">Войти</button>
-                </li>
-            </ul>
-        </div>
-        <div class="nav__navigation">
-            <a class="features" href="#">Функция</a>
-            <a class="pricing" href="#">Цены</a>
-            <a class="overview" href="#">Обзор</a>
-            <a class="about" href="#">О нас</a>
-        </div>
+        <div class="nav__container container">
+            <img class="nav__logo" src="icons/logo.svg" alt="">
+            <div class="nav__hamb" onclick="menuHamb()">
+                <span id="span1" class="open"></span>
+                <span id="span2" class="open"></span>
+                <span id="span3" class="open"></span>
+            </div>
+            <div class="nav__hamb-menu">
+                <ul>
+                    <li class="nav__hamb-item"><a>Функции</a></li>
+                    <li class="nav__hamb-item"><a>Цены</a></li>
+                    <li class="nav__hamb-item"><a>Обзор</a></li>
+                    <li class="nav__hamb-item"><a>О нас</a></li>
+                    <li class="nav__hamb-item">
+                        <button class="nav__signUp nav__hamb-signUp">Войти</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__navigation">
+                <a class="features" href="#">Функция</a>
+                <a class="pricing" href="#">Цены</a>
+                <a class="overview" href="#">Обзор</a>
+                <a class="about" href="#">О нас</a>
+            </div>
 
-        <button class="nav__signUp">Войти</button>
+            <button class="nav__signUp">Войти</button>
+        </div>
     </nav>
 
     <header class="header">
@@ -74,7 +76,7 @@
 
     <section class="features">
         <div class="features__container container">
-            <div class="overflowHidden">
+            <div class="overflowHidden overflowHidden__text">
                 <div class="features__text wow fadeIn" data-wow-duration="1s" data-wow-offset='100'>
                     <h2>Почему мы лучше остальных</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +85,7 @@
                     </p>
                 </div>
             </div>
-            <div class="overflowHidden">
+            <div class="overflowHidden overflowHidden__facts">
                 <div class="features__facts wow slideInRight" data-wow-offset='100' data-wow-duration="1s">
                     <div class="features__fact features__fact-1">
                         <h3>Удобный график</h3><img src="img/chedule.png" alt="">
@@ -100,7 +102,6 @@
     </section>
 
     <section class="benefit">
-        <div class="benefit__opacity-bgc"></div>
         <div class="benefit__container container ">
             <div class="benefit__main">
                 <div class="benefit__args">
@@ -279,7 +280,6 @@
             <div class="footer__other">
                 <ul class="footer__other-ul">
                     <li class="footer__other-li">
-                        <h3>Платформа</h3>
                         <ul class="footer__ul">
                             <li class="footer__li"><a href="#">Обзор</a></li>
                             <li class="footer__li"><a href="#">Функции</a></li>
@@ -288,7 +288,6 @@
                         </ul>
                     </li>
                     <li class="footer__other-li">
-                        <h3>Помощь</h3>
                         <ul class="footer__ul">
                             <li class="footer__li"><a href="#">Как это работает?</a></li>
                             <li class="footer__li"><a href="#">Куда задавать вопросы?</a></li>
@@ -296,13 +295,7 @@
                             <li class="footer__li"><a href="#">Что для этого нужно?</a></li>
                         </ul>
                     </li>
-                    <li class="footer__other-li">
-                        <h3>Контакты</h3>
-                        <ul class="footer__ul">
-                            <li class="footer__li"><a href="#">(000) 000-0000</a></li>
-                            <li class="footer__li"><a href="#">115 Авеню д.Незнаево, Москва(МСК)</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </div>
         </div>

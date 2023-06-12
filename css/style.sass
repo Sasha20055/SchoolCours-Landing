@@ -20,7 +20,6 @@ body
 .header, section
     margin: 0 0 50px 0
 
-    
 .container
     max-width: 1440px !important
 
@@ -138,58 +137,10 @@ a
 .nav
     height: 150px
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-items: center
     z-index: 9
     padding: 0 20px 0 20px
-    .nav__hamb-menu
-        position: absolute
-        top: -450px
-        width: 100%
-        height: 450px
-        left: 0 !important
-        transition: 0.5s
-        background-color: white
-        box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
-        ul
-            width: 100%
-            height: 100%
-            padding: 0
-            list-style-type: none
-            display: flex
-            flex-direction: column
-            justify-content: space-around
-            align-items: center
-
-    .nav__hamb
-        display: none
-        justify-content: center
-        align-items: center
-        flex-direction: column
-        gap: 4px
-        transition: 0.5s
-        span
-            width: 30px
-            height: 4px
-            border-radius: 50px
-            background-color: black
-
-        &:hover
-            transform: scale(0.9)
-
-        &:active
-            transform: scale(0.8)
-
-    .nav__signUp
-        font-family: 'Jost-medium'
-        font-weight: 500
-        height: 45px
-        width: 125px
-        border-radius: 10px
-        color: #001049
-    .nav__navigation
-        display: flex
-        gap: 30px
     a
         display: flex
         justify-content: center
@@ -203,283 +154,329 @@ a
         &:hover
             background-color: #001049
             color: #fff !important
+.nav__container
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+.nav__hamb-menu
+    position: absolute
+    top: -450px
+    width: 100%
+    height: 450px
+    left: 0 !important
+    transition: 0.5s
+    background-color: white
+    box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
+    ul
+        width: 100%
+        height: 100%
+        padding: 0
+        list-style-type: none
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+
+.nav__hamb
+    display: none
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 4px
+    transition: 0.5s
+    span
+        width: 30px
+        height: 4px
+        border-radius: 50px
+        background-color: black
+
+    &:hover
+        transform: scale(0.9)
+
+    &:active
+        transform: scale(0.8)
+
+.nav__signUp
+    font-family: 'Jost-medium'
+    font-weight: 500
+    height: 45px
+    width: 125px
+    border-radius: 10px
+    color: #001049
+.nav__navigation
+    display: flex
+    gap: 30px
 
 .header
     height: 500px
     display: flex
     justify-content: center
     align-items-center
-    .header__container
-        width: 100%
+.header__container
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+.header__main
+    display: flex
+    flex-direction: column
+    max-width: 400px
+    margin: 0 0 0 30px
+    .buttons
         display: flex
-        align-items: center
-        justify-content: space-between
-        .header__main
-            display: flex
-            flex-direction: column
-            max-width: 400px
-            margin: 0 0 0 30px
-            .buttons
-                display: flex
-                flex-wrap: wrap
-                justify-content: start
-                gap: 15px
-        .header__blocks
-            display: flex
-            justify-content: end
-            max-width: 500px
-            flex-wrap: wrap
-            gap: 20px
-            .header__block
-                display: flex
-                width: 200px
-                height: 200px
-                border-radius: 40px
-            .header__block-1
-                justify-content: center
-                align-items: center
-                background-color: #FF9292
-            .header__block-2
-                justify-content: center
-                align-items: center
-                background-color: #FFDA92
-            .header__block-3
-                justify-content: center
-                align-items: end
-                background-color: #C292FF
-                justify-self
-            .header__block-4
-                justify-content: end
-                align-items: end
-                background-color: #92EBFF
-                img
-                    position: relative
-                    left: 40px
-                    top: 45px
-
-            img
-                max-width: 180px
-                min-width: 100px
+        flex-wrap: wrap
+        justify-content: start
+        gap: 15px
+.header__blocks
+    display: flex
+    justify-content: end
+    max-width: 500px
+    flex-wrap: wrap
+    gap: 20px
+.header__block
+    display: flex
+    width: 200px
+    height: 200px
+    border-radius: 40px
+    img
+        max-width: 180px
+        min-width: 100px
+.header__block-1
+    justify-content: center
+    align-items: center
+    background-color: #FF9292
+.header__block-2
+    justify-content: center
+    align-items: center
+    background-color: #FFDA92
+.header__block-3
+    justify-content: center
+    align-items: end
+    background-color: #C292FF
+    justify-self
+.header__block-4
+    justify-content: end
+    align-items: end
+    background-color: #92EBFF
+    img
+        position: relative
+        left: 40px
+        top: 45px
 
 .features
     height: 700px
     display: flex
     justify-content: center
     align-items-center
-    .features__container
-        width: 100%
-        display: flex
-        align-items: start
-        justify-content: space-between
-        gap: 50px
-        .features__text
-            display: flex
-            flex-direction: column
-            max-width: 250px
-            margin: 0 0 0 30px
-        .features__facts
-            display: flex
-            flex-direction: column
-            width: 900px
-            align-items: center
-            gap: 50px
-            .features__fact-1
-                align-self: center
-            .features__fact-2
-                align-self: end
-            .features__fact-3
-                align-self: start
-            .features__fact
-                width: 505px
-                height: 190px
-                display: flex
-                align-items: center
-                justify-content: space-between
-                border-radius: 20px
-                box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
-
-                h3
-                    position: relative
-                    left: 20px
-                    bottom: 30px
+.features__container
+    width: 100%
+    display: flex
+    align-items: start
+    justify-content: space-between
+    gap: 50px
+.overflowHidden__text
+    width: 20%
+.overflowHidden__facts
+    width: 80%
+.features__text
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin: 0 0 0 30px
+.features__facts
+    display: flex
+    flex-direction: column
+    width: 100%
+    align-items: center
+    gap: 50px
+.features__fact-1
+    align-self: center
+.features__fact-2
+    align-self: end
+.features__fact-3
+    align-self: start
+.features__fact
+    width: 505px
+    height: 190px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 20px
+    box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
+    h3
+        position: relative
+        left: 20px
+        bottom: 30px
 
 .benefit
-    height: 550px
     display: flex
     justify-content: center
     align-items: center
-    .benefit__opacity-bgc
-        position: absolute
+    background: rgba(86, 133, 255, 0.05)
+
+.benefit__container
+    z-index: 2
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 25px 0
+.benefit__args
+    max-width: 500px
+    min-width: 300px
+    margin: 0 0 0 30px
+    button
+        position: relative
+        left: 100px
+.benefit__arg
+    display: flex
+    gap: 20px
+    margin: 0 0 50px 0
+.benefit__text
+    max-width: 300px
+    h2
+        margin-top: 0
+        color: #5685FF
+        &:first-line
+            color: #001049
+
+.benefit__num
+    min-width: 85px
+    height: 85px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    .opacity
         width: 100%
-        opacity: 5%
-        height: 550px
+        height: 100%
+        opacity: 30%
         background-color: #5685FF
-
-    .benefit__container
-        z-index: 2
-        width: 100%
-        display: flex
-        justify-content: space-between
-        align-items: center
-        .benefit__args
-            max-width: 500px
-            min-width: 300px
-            margin: 0 0 0 30px
-            button
-                position: relative
-                left: 100px
-            .benefit__arg
-                display: flex
-                gap: 20px
-                margin: 0 0 50px 0
-                .benefit__text
-                    max-width: 300px
-                    h2
-                        margin-top: 0
-                        color: #5685FF
-                        &:first-line
-                            color: #001049
-
-            .benefit__num
-                min-width: 85px
-                height: 85px
-                display: flex
-                align-items: center
-                justify-content: center
-                border-radius: 10px
-                .opacity
-                    width: 100%
-                    height: 100%
-                    opacity: 30%
-                    background-color: #5685FF
-                    border-radius: 10px
-                p
-                    color: #001049
-                    font-size: 3em
-                    position: absolute
-        .benefit__pict
-            img
-                position: relative
-                top: 80px
+        border-radius: 10px
+    p
+        color: #001049
+        font-size: 3em
+        position: absolute
 
 .pricing
     display: flex
     justify-content: center
     align-items: center
-    .pricing__container
-        width: 100%
+.pricing__container
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+.pricing__main
+    text-align: center
+    mix-width: 300px
+    max-width: 600px
+.pricing__text
+    text-align: center
+.pricing__tarif
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 15px
+.pricing__checkbox-group
+    position: relative
+    width: 40px
+    height: 20px
+    border: 1px solid rgba(86, 133, 255, 0.15)
+    border-radius: 20px
+    .checkbox
+        visibility: hidden
+    .checkbox-label
+        display: block
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        background-color: #5685FF
+        position: absolute
+        top: 2px
+        left: 2px
+        z-index: 1
+        transition: all 0.5s
+    .checkbox:checked + .checkbox-label
+        left: 22px
+        background-color: #001049
+
+.pricing__packets, .overflowHiddenSlider
+    width: 100%
+    max-width: 1440px
+    height: 800px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    z-index: 3
+.pricing__packet
+    width: 340px
+    height: 720px
+    position: relative
+    border-radius: 40px
+    text-align: center
+    transition: all 0.5s
+    &:hover
+        transform: scale(1.05)
+        .Diskount
+            border: 2px solid #001049
+            &:hover
+                background-color: #001049
+        .price
+            h4
+                color: #001049
+.pricing__name
+    font-size: 32px
+    margin-bottom: 20px
+.pricing__subtext
+    max-width: 270px
+    margin: auto
+.price
+    display: flex
+    justify-content: center
+    align-items: end
+    gap: 5px
+    margin: 30px
+    h4
+        font-size: 80px
+        margin: 0
+        color: #5685FF
+
+.pricing__included
+    position: relative
+    left: 20px
+    margin-bottom: 50px
+    li
         display: flex
-        justify-content: center
+        justify-content: start
+        gap: 10px
         align-items: center
-        flex-direction: column
-        .pricing__main
-            text-align: center
-            mix-width: 300px
-            max-width: 600px
-            .pricing__text
-                text-align: center
-            .pricing__tarif
-                display: flex
-                justify-content: center
-                align-items: center
-                gap: 15px
-                .pricing__checkbox-group
-                    position: relative
-                    width: 40px
-                    height: 20px
-                    border: 1px solid rgba(86, 133, 255, 0.15)
-                    border-radius: 20px
-                    .checkbox
-                        visibility: hidden
-                    .checkbox-label
-                        display: block
-                        width: 16px
-                        height: 16px
-                        border-radius: 50%
-                        background-color: #5685FF
-                        position: absolute
-                        top: 2px
-                        left: 2px
-                        z-index: 1
-                        transition: all 0.5s
-                    .checkbox:checked + .checkbox-label
-                        left: 22px
-                        background-color: #001049
-
-        .pricing__packets, .overflowHiddenSlider
-            width: 100%
-            max-width: 1440px
-            height: 800px
-            display: flex
-            justify-content: space-around
-            align-items: center
-            z-index: 3
-            .pricing__packet
-                width: 340px
-                height: 720px
-                position: relative
-                border-radius: 40px
-                text-align: center
-                transition: all 0.5s
-                .pricing__name
-                    font-size: 32px
-                    margin-bottom: 20px
-                .pricing__subtext
-                    max-width: 270px
-                    margin: auto
-                .price
-                    display: flex
-                    justify-content: center
-                    align-items: end
-                    gap: 5px
-                    margin: 30px
-                    h4
-                        font-size: 80px
-                        margin: 0
-                        color: #5685FF
-
-                .pricing__included
-                    position: relative
-                    left: 20px
-                    margin-bottom: 50px
-                    li
-                        display: flex
-                        justify-content: start
-                        gap: 10px
-                        align-items: center
-                        list-style: none
-                        margin: 20px 0 0 0
-                &:hover
-                    transform: scale(1.05)
-                    .Diskount
-                        border: 2px solid #001049
-                        &:hover
-                            background-color: #001049
-                    .price
-                        h4
-                            color: #001049
+        list-style: none
+        margin: 20px 0 0 0
 
 .discount
     position: relative
     display: flex
     justify-content: center
     align-items: center
-    .discount__container
-        width: 100%
-        display: flex
-        justify-content: end
-        text-align: end
-        .discount__main
-            p
-                max-width: 400px
-                margin: 20px 0 50px 50%
-
-            h2
-                font-size: 40px
-                max-width: 800px
-        .discount__img
-            position: absolute
-            left: 0
+.discount__container
+    width: 100%
+    display: flex
+    justify-content: end
+    text-align: end
+    position: relative
+.discount__main
+    p
+        max-width: 400px
+        margin: 20px 0 50px 50%
+    h2
+        font-size: 40px
+        max-width: 800px
+.discount__img
+    position: absolute
+    left: 0
 
 .footer
     background-color: #DFE8FF
@@ -488,273 +485,262 @@ a
     display: flex
     justify-content: center
     align-items-center
-    .footer__container
-        width: 100%
+.footer__container
+    width: 100%
+    display: flex
+    align-items: start
+    justify-content: space-between
+    padding: 30px
+.footer__main
+    min-width: 450px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    img
+        width: 85px
+    p
+        width: 400px
+
+.footer__form
+    display: flex
+    align-items: center
+    input
+        width: 300px
+        height: 51px
+        border-radius: 10px 0 0 10px
+        border: 1px solid #001049
+        opacity: 30%
+        font-size: 1.5em
+        padding: 0 20px 0 20px
+        &:hover
+            opacity: 60%
+    button
+        position: relative
+        right: 15px
+        width: 150px
+        font-size: 1.2em
+.footer__other
+    margin-left: 10px
+    display: flex
+    align-items: center
+    justify-contant: center
+.footer__other-ul
+    padding-left: 0
+    display: flex
+    gap: 80px
+    margin-right: 80px
+    h3
+        margin-bottom: 20px
+        margin-top: 0
+    li
+        list-style: none
+    a
+        color: #001049
+.footer__other-li
+    display: flex
+    flex-direction: column
+    position: relative
+    transition-duration: 1s
+    li
         display: flex
-        align-items: start
-        justify-content: space-between
-        padding: 30px
-        .footer__main
-            min-width: 450px
-            display: flex
-            flex-direction: column
-            justify-content: center
-            img
-                width: 85px
-            p
-                width: 400px
-
-            .footer__form
-                display: flex
-                align-items: center
-                input
-                    width: 300px
-                    height: 51px
-                    border-radius: 10px 0 0 10px
-                    border: 1px solid #001049
-                    opacity: 30%
-                    font-size: 1.5em
-                    padding: 0 20px 0 20px
-                    &:hover
-                        opacity: 60%
-
-                button
-                    position: relative
-                    right: 15px
-                    width: 150px
-                    font-size: 1.2em
-        .footer__other
-            margin-left: 10px
-            display: flex
-            align-items: center
-            justify-contant: center
-            .footer__other-ul
-                padding-left: 0
-                display: flex
-                gap: 80px
-                margin-right: 80px
-
-                .footer__other-li
-                    display: flex
-                    flex-direction: column
-                    position: relative
-                    transition-duration: 1s
-
-                    li
-                        display: flex
-                        flex-direction: column
-                        position: relative
-
-                h3
-                    margin-bottom: 20px
-                    margin-top: 0
-
-                .footer__ul
-                    padding: 0
-                    height: 300px
-                    width: 200px
-                    display: flex
-                    flex-direction: column
-                    justify-content: space-around
-                    background-color: #DFE8FF
-                    box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
-                    border-radius: 10px
-                    .footer__li
-                        margin-left: 30px
-                li
-
-                    list-style: none
-                    a
-                        color: #001049
-
+        flex-direction: column
+        position: relative
+.footer__ul
+    padding: 0
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    gap: 20px
+    .footer__li
+        margin-left: 30px
+@media screen and (max-width: 700px)
+    .nav__navigation
+        display: none
+    .nav__signUp
+        display: none
+    .nav__hamb-signUp
+        display: block
+    .nav__hamb
+        display: flex
+    .nav__logo
+        width: 32px
+        height: 28px
+    .header__blocks
+        display: none
+    .header__main
+        text-align: center
+        .buttons
+            flex-wrap: nowrap
+    .header__container
+        justify-content: center
 @media screen and (max-width: 1025px)
-    .header
-        .header__blocks
-            max-width: 400px !important
-        .header__block
-            width: 150px !important
-            height: 150px !important
-        .header__block-1
-            img
-                width: 120px !important
+    .header__blocks
+        max-width: 400px
+    .header__block
+        width: 150px
+        height: 150px
+    .header__block-1
+        img
+            width: 120px
     .benefit
         img
-            width: 500px !important
+            width: 500px
             position: relative
-            top: 120px !important
-    .discount
-        .discount__img
-            align-self: end !important
-            img
-                width: 250px !important
-    .footer
-        .footer__other-li
-            &:hover
-                .footer__ul
-                    display: flex !important
-                    position: absolute !important
-        .footer__ul
-            display: none !important
-        .footer__other-li
-            flex-direction: column-reverse !important
-        .footer__other-ul
-            flex-direction: column
-            gap: 40px !important
+            top: 120px
+    .discount__img
+        align-self: end
+        top: 170px
+        img
+            width: 250px
+    .footer__other-ul
+        margin: 0
+        gap: 20px
 @media screen and (max-width: 769px)
+    
     .footer
         max-height: 1000px
-        .footer__container
-            flex-direction: column !important
-            align-items: center !important
-            .footer__main
-                min-width: 200px !important
-                max-width: 400px !important
-                align-items: start !important
-                margin: auto
-                img
-                    display: none !important
-                p
-                    width: 300px !important
-                input
-                    width: 200px !important
-                button
-                    width: 100px !important
-                    font-size: 0.8em !important
-            .footer__other-li
-                &:hover
-                    .footer__ul
-                        position: static !important
+    .footer__container
+        flex-direction: column
+        align-items: center
+    .footer__main
+        min-width: 200px
+        max-width: 400px
+        align-items: center
+        text-align: center
+        img
+            display: none
+        p
+            width: 300px
+        input
+            width: 200px
+        button
+            width: 100px
+            font-size: 0.8em
+    .footer__other-li
+        &:hover
             .footer__ul
-                width: 150px !important
-                height: 200px !important
-                display: flex !important
-                .footer__li
-                    margin-left: 5px !important
-            .footer__other-li
-                flex-direction: column !important
-                margin-top: 20px !important
-                h3
-                    margin-bottom: 10px !important
-            .footer__other-ul
-                flex-direction: row !important
-                gap: 10px !important
-                flex-wrap: wrap
-                justify-content: start !important
-                margin: 0 !important
+                position: static
+    .footer__ul
+        width: 150px
+        height: 200px
+        display: flex
+        .footer__li
+            margin-left: 5px
+    .footer__other-li
+        flex-direction: column
+        margin-top: 20px
+        h3
+            margin-bottom: 10px
+    .footer__other-ul
+        flex-direction: row
+        gap: 10px
+        flex-wrap: wrap
+        justify-content: start
+        margin: 0
     .features
-        height: 900px
-        .features__container
-            flex-direction: column
-        .features__facts
-            width: 400px !important
-            align-self: end
-            .features__fact
-                width: 405px !important
-                height: 150px !important
-                align-self: center !important
-            .features__fact-3
-                img
-                    position: relative !important
-                    bottom: 10px !important
-                    height: 170px !important
-        .features__text
-            justify-content: start !important
-            margin: 50px !important
+        height: 1000px
+    .features__container
+        flex-direction: column
+        justify-content: center
+        .overflowHidden
+            width: 100%
+    .features__facts
+        width: 100%
+    .features__fact
+        width: 405px
+        height: 150px
+        align-self: end
+    .features__fact-3
+        img
+            position: relative
+            bottom: 10px
+            height: 170px
+    .features__text
+        justify-content: start
+        width: 70%
+        margin: 50px
     .benefit
         img
             display: none
-        .benefit__container
-            justify-content: center !important
-    .discount
-        .discount__img
-
-            img
-                width: 150px !important
-
-        .discount__main
-            p
-                max-width: 800px !important
-            h2
-                font-size: 30px !important
+    .benefit__container
+        justify-content: center
+    .discount__main
+        p
+            max-width: 800px
+        h2
+            font-size: 30px
 @media screen and (max-width: 426px)
     body
         p
-            font-size: 0.8em !important
+            font-size: 0.8em
         h1
-            font-size: 2em !important
+            font-size: 2em
         h2
-            font-size: 1.2em !important
+            font-size: 1.2em
         h3
-            font-size: 1em !important
-    .footer
-        .footer__container
-            .footer__main
-                min-width: 100px !important
-                max-width: 300px !important
-                align-items: start !important
-                margin: auto
-                img
-                    display: none !important
-                input
-                    width: 150px !important
-                    height: 50px !important
-                    font-size: 1em !important
-                button
-                    height: 52px !important
-            .footer__other-li
-                font-size: 0.8em !important
-                .footer__ul
-                    height: 200px !important
-                    width: 130px !important
-    .nav
-        .nav__navigation
+            font-size: 1em
+    .benefit__num
+        p
+            font-size: 1.5em
+    .discount__img
+        top: 200px
+        img
+            width: 150px
+    .footer__container
+        padding: 50px 0
+    .benefit__args
+        margin: 0
+    .footer__main
+        min-width: 100px
+        max-width: 300px
+        align-items: start
+        margin: auto
+        img
             display: none
-        .nav__signUp
-            display: none
-        .nav__hamb-signUp
-            display: block
-        .nav__hamb
-            display: flex !important
-        .nav__logo
-            width: 32px
-            height: 28px
+        input
+            width: 150px
+            height: 50px
+            font-size: 1em
+        button
+            height: 52px
+    .footer__other-li
+        font-size: 0.8em
+        .footer__ul
+            height: 200px
+            width: 130px
     .benefit
         height: 650px
-        .benefit__opacity-bgc
-            width: 100%
-            opacity: 5%
-            height: 650px
-            background-color: #5685FF
         button
-            position: static !important
-            width: 100% !important
-        .benefit__num
-            height: 55px !important
-            min-width: 55px !important
-            max-width: 55px !important
-            font-size: 1.5em !important
-        .benefit__arg
-            flex-direction: column
-    .header__blocks
-        display: none !important
+            position: static
+            width: 100%
+    .benefit__opacity-bgc
+        width: 100%
+        opacity: 5%
+        height: 650px
+        background-color: #5685FF
+    .benefit__num
+        height: 55px
+        min-width: 55px
+        max-width: 55px
+        font-size: 1.5em
+    .benefit__arg
+        flex-direction: column
     .features
         height: 820px
-        .features__text
-            margin: 20px !important
-        .features__facts
-            width: 300px !important
-            align-self: end
-
-            .features__fact
-                width: 305px !important
-                height: 150px !important
-                align-self: center !important
-            .features__fact-1
-                img
-                    width: 200px !important
-
-            .features__fact-3
-                img
-                    position: relative !important
-                    bottom: 0px !important
-                    height: 150px !important
+    .features__text
+        margin: 20px
+    .features__facts
+        width: 300px
+        align-self: end
+        .features__fact
+            width: 305px
+            height: 150px
+            align-self: center
+        .features__fact-1
+            img
+                width: 200px
+        .features__fact-3
+            img
+                position: relative
+                bottom: 0px
+                height: 150px
