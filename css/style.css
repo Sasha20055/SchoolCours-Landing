@@ -33,7 +33,11 @@ body {
 }
 
 .container {
-  max-width: 1440px !important;
+  max-width: 2000px !important;
+}
+
+section, .header, footer {
+  padding: 100px 0;
 }
 
 .slider {
